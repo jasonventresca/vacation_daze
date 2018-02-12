@@ -8,6 +8,7 @@ import {
   Divider,
   Header,
 } from 'semantic-ui-react';
+import './styles/styles.css';
 
 class Main extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <Container textAlign='left' className='top-pad'>
+        <Container textAlign='left' className='container1'>
           <List>
             <List.Item>
               <Header as='h4'>Enter your initial balance:</Header>
@@ -43,6 +44,7 @@ class Main extends React.Component {
                 labelPosition='right'
                 placeholder='10'
               />
+              <Divider />
               <Header as='h2'>Hop in the time machine for:</Header>
               <Input
                 placeholder='1.5 years'
